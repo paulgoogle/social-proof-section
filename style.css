@@ -1,0 +1,189 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#container{
+  width:70%;
+  margin: 100px auto;
+
+}
+
+body{
+  background: url(images/bg-pattern-top-desktop.svg), url(images/bg-pattern-bottom-desktop.svg);
+  background-position: left top,right bottom;
+  background-repeat: no-repeat, no-repeat;
+}
+
+#top-section{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 2.5rem;
+}
+
+#top-section h1{
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+#top-section p{
+  font-size: 1.rem;
+}
+
+#left-section{
+  width:45%;
+  margin-right: 12%;
+}
+
+#right-section{
+  width:55%;
+}
+
+.light-card{
+  margin: 0.5rem;
+  padding: 1rem 1rem 1rem 1.5rem;
+  background: lightgrey;
+  display: inline-block;
+  width:350px;
+  border: none;
+  border-radius: 5px;
+  position: relative;
+}
+
+.light-card.card-2{
+  left:40px;
+}
+.light-card.card-3{
+  left:80px;
+}
+
+
+#bottom-section{
+  display: flex;
+  width:100%;
+  overflow: visible;
+}
+
+.dark-card{
+  background:purple;
+  margin: 1rem 1rem 1rem 0;
+  padding: 2rem;
+  border-radius: 5px;
+  color: rgb(230, 223, 223);
+  position: relative;
+}
+
+.dark-card .name{
+  margin-bottom: .5rem;
+}
+
+.dark-card .description{
+  margin-bottom: .5rem;
+}
+
+.dark-card p{
+  font-size: 14px;
+}
+
+.dark-card .info-1{
+  display: flex;
+  align-items: flex-start;
+}
+
+.dark-card img{
+  border-radius: 50%;
+  height:3rem;
+  margin:0 1rem 1rem 0;
+}
+
+.dark-card.card-5{
+  top:25px;
+}
+.dark-card.card-6{
+  top:50px;
+}
+
+
+
+
+
+
+
+.attribution{
+  margin-top:2rem;
+  padding: 2rem;
+  text-align: center;
+}
+
+@media screen and (max-width: 375px){
+#container{
+  width:95%;
+  margin:10px;
+  text-align: center;
+}
+
+ #top-section{
+   width:100%;
+   display: flex;
+   flex-direction: column;
+   margin-bottom: 1rem;
+ }
+
+ #left-section{
+  width:100%
+}
+
+#right-section{
+  width:99%;
+}
+
+.light-card img{
+  height:14px;
+}
+
+.light-card{
+  padding: 1rem;
+  widows: 100%;
+  margin:0.25rem;
+}
+
+
+.light-card.card-1{
+  left:0;
+  width:100%;
+  font-size: 12px;
+  text-align: left;
+}
+
+.light-card.card-2{
+  left:0;
+  width:100%;
+  font-size: 12px;
+  text-align: left;
+}
+
+.light-card.card-3{
+  left:0;
+  width:100%;
+  font-size: 12px;
+  text-align: left;
+}
+
+#bottom-section{
+  display: flex;
+  width:100%;
+  flex-direction: column;
+}
+
+.dark-card{
+  background:purple;
+  margin: 0.1rem auto;
+  padding: 1rem;
+  border-radius: 5px;
+  color: rgb(230, 223, 223);
+  width:100%;
+}
+
+}
